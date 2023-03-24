@@ -11,21 +11,25 @@ import React, { useState, useEffect } from 'react';
 function Header() {
   return (
     <div className="header">
-      <p>Hi, my name is</p>
-      <div className="main-header">
+      <p className="header-text">Hi, my name is</p>
+      <Link className="name" to="/home">
         Bruno Athié Teruel
-      </div>
-      <p>I am a computer scientist and anthropologist</p>
+      </Link>
+      <p className="header-text">I am a computer scientist and anthropologist</p>
       <div className='NavPhrase'>
-        <p>Learn more about </p>
+        <p className="header-text">Learn more about: </p>
         <nav className="nav" id="nav">
-          <Link to="/work" class="navbar-item">me</Link>
-          <Link to="/about" class="navbar-item">my work</Link>
+          <Link to="/about" class="navbar-item">me</Link>
+          <Link to="/work" class="navbar-item">my work</Link>
           <Link to="/contact" class="navbar-item">my art</Link>
         </nav>
       </div>
     </div>
   );
+}
+
+function Home() {
+  return;
 }
 
 function Work() {
@@ -38,8 +42,14 @@ function Work() {
 
 function About() {
   return (
-    <div className="small-page">
-      <p> about </p>
+    <div className="about-me-page">
+      <div className="page">
+        <p class='Paragraph'> 
+        I was born in Avaré, Brazil. I got a full ride to study
+        at the University of Kentucky. I worked at the intersection
+        of anthropology and computer science.
+        </p>
+      </div>
     </div>
   );
 }
@@ -60,8 +70,9 @@ function App() {
         <Header/>
         <div class="main-page">
           <Routes>
-            <Route path="/work" element={<Work/>}></Route>
+            <Route path="/home" element={<Home/>}></Route>
             <Route path="/about" element={<About/>}></Route>
+            <Route path="/work" element={<Work/>}></Route>
             <Route path="/contact" element={<Contact/>}></Route>
           </Routes>
         </div>

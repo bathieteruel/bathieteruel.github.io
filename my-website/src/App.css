@@ -8,85 +8,44 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  justify-content: right;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+div {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header {
   margin: 100px 0 0 0;
 }
 
-div {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.small-page {
+.name {
+  margin: 0 0 0 0;
+  line-height: 0.7;
+  text-align: left;
+  font-size: 90px;
+  font-family:'Caudex';
   color: black;
-  font-size: 30px;
-  font-weight: 600;
-  text-align: left;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
-.small-page:hover {
-  color: orangered;
-  position:relative;
+.name:hover {
+  color: brown;
+
 }
 
-.main-page {
-  margin: 30px 0;
-  padding: 30px;
-  width: 430px;
-  text-align: left;
-  background-color: whitesmoke;
-  border-radius: 30px;
-  transition: 0.5s;
-}
-
-.main-page:hover {
-  border-radius: 30px;
-}
-
-p {
+.header-text{
   margin:  0;
   text-align: left;
   font-size: 40px;
   font-weight: 600;
-  font-family: 'Nunito';
+  font-family: 'Prompt';
   color: black;
   transition: 0.3s;
   line-height: 1.2;
 }
 
-.main-header {
-  margin: 0 0 0 0;
-  line-height: 0.7;
-  text-align: left;
-  font-size: 90px;
-  font-weight: 600;
-  font-family:'Nunito';
-  color: black;
-  transition: 0.3s;
-}
-
-.main-header:hover {
-  color: transparent;
-  text-shadow: 0 0 10px blue;
-}
-
 .NavPhrase {
-  position: relative;
+  display: inline-block;
 }
 
 nav {
@@ -99,19 +58,43 @@ nav {
   padding: 5px 20px;
   margin: 0 4px;
   color: white;
-  font-family: 'Nunito';
+  font-family: 'Prompt';
   font-size: 40px;
   font-weight: 600;
-  background-color: orangered;
+  background-color: black;
   transition: 0.3s;
   text-decoration: none;
-  border-radius: 6px;
 }
 
 .navbar-item:hover {
   color: white;
-  background-color: blue;
-  border-radius: 30px;
+  background-color: firebrick;
+  border-radius: 40px;
+}
+
+.main-page {
+  margin: 30px 0;
+  padding: 20px;
+  width: 430px;
+  text-align: left;
+  background-color: whitesmoke;
+  transition: 0.5s;
+  font-family: 'Caudex';
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.about-me-page > * {
+  display: flex;
+}
+
+.page{
+  display: inline-block;
+}
+
+.Paragraph {
+  font-family: 'Caudex';
+  font-size: 30px;
 }
 
 @keyframes App-logo-spin {
