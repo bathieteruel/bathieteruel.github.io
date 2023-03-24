@@ -1,4 +1,5 @@
 import './App.css';
+import { Background } from './Background.js';
 import {
   BrowserRouter as Router,
   Routes,
@@ -66,6 +67,7 @@ function Contact() {
 function App() {
   return (
     <Router>
+      <Background/>
       <div className="page" style={{marginLeft: 30, marginRight: 30}}>
         <Header/>
         <div class="main-page">
