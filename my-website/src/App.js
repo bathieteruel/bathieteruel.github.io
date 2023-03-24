@@ -10,34 +10,45 @@ import React, { useState, useEffect } from 'react';
 
 function Header() {
   return (
-    <div className="Header">
-      <h1>
-        Hi, my name is Bruno Athie Teruel
-      </h1>
-      <nav className="nav" id="nav">
-        <Link to="/work" class="navbar-item">Work</Link>
-        <Link to="/about" class="navbar-item">About</Link>
-        <Link to="/contact" class="navbar-item">Contact</Link>
-      </nav>
+    <div className="header">
+      <p>Hi, my name is</p>
+      <div className="main-header">
+        Bruno Athié Teruel
+      </div>
+      <p>I am a computer scientist and anthropologist</p>
+      <div className='NavPhrase'>
+        <p>Learn more about </p>
+        <nav className="nav" id="nav">
+          <Link to="/work" class="navbar-item">me</Link>
+          <Link to="/about" class="navbar-item">my work</Link>
+          <Link to="/contact" class="navbar-item">my art</Link>
+        </nav>
+      </div>
     </div>
   );
 }
 
 function Work() {
   return (
-    <p> work </p>
+    <div className="small-page">
+      <p> work </p>
+    </div>
   );
 }
 
 function About() {
   return (
-    <p> about </p>
+    <div className="small-page">
+      <p> about </p>
+    </div>
   );
 }
 
 function Contact() {
   return (
-    <p> contact </p>
+    <div className="small-page">
+      <p> contact </p>
+    </div>
   );
 }
 
