@@ -1,17 +1,32 @@
-import './App.css';
-import { Background } from './Background.js';
+import './App.scss';
+import { Background } from './Background';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link,
-  useNavigate
+  useNavigate,
+  useLocation,
 } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 
-function Header() {
+function Header(props) {
+  const location = useLocation();
+  const [isHeaderSmall, setIsHeaderSmall] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === '/about' || location.pathname === '/work' || location.pathname === '/art') {
+      setIsHeaderSmall(true);
+    } else {
+      setIsHeaderSmall(false); 
+    }
+  }, [location.pathname]);
+
+
+  const classname = `header ${isHeaderSmall ? 'small' : ''}`
+  
   return (
-    <div className="header">
+    <div className={classname}>
       <p className="header-text">Hi, my name is</p>
       <Link className="name" to="/home">
         Bruno Athié Teruel
@@ -22,7 +37,7 @@ function Header() {
         <nav className="nav" id="nav">
           <Link to="/about" class="navbar-item">me</Link>
           <Link to="/work" class="navbar-item">my work</Link>
-          <Link to="/contact" class="navbar-item">my art</Link>
+          <Link to="/art" class="navbar-item">my art</Link>
         </nav>
       </div>
     </div>
@@ -30,35 +45,47 @@ function Header() {
 }
 
 function Home() {
-  return;
+  return (
+    <div>
+      <Header smallHeader={false}></Header>
+    </div>
+  );
 }
 
 function Work() {
   return (
-    <div className="small-page">
-      <p> work </p>
+    <div>
+      <div className="block-page">
+        <ul>
+          <li>Researcher at EduceLab</li>
+          <li>Researcher at HEVA Lab</li>
+          <li>Intern at Carlson</li>
+        </ul>
+      </div>
     </div>
   );
 }
 
 function About() {
   return (
-    <div className="about-me-page">
-      <div className="page">
-        <p class='Paragraph'> 
-        I was born in Avaré, Brazil. I got a full ride to study
-        at the University of Kentucky. I worked at the intersection
-        of anthropology and computer science.
-        </p>
+    <div>
+      <div className="block-page">
+          <p class='Paragraph'> 
+          I was born in Avaré, Brazil. I got a full ride to study
+          at the University of Kentucky. I worked at the intersection
+          of anthropology and computer science.
+          </p>
       </div>
     </div>
   );
 }
 
-function Contact() {
+function Art() {
   return (
-    <div className="small-page">
-      <p> contact </p>
+    <div>
+      <div className="block-page">
+        <p>art here</p>
+      </div>
     </div>
   );
 }
@@ -67,15 +94,14 @@ function Contact() {
 function App() {
   return (
     <Router>
-      <Background/>
       <div className="page" style={{marginLeft: 30, marginRight: 30}}>
+        <Background/>
         <Header/>
-        <div class="main-page">
+        <div>
           <Routes>
-            <Route path="/home" element={<Home/>}></Route>
             <Route path="/about" element={<About/>}></Route>
             <Route path="/work" element={<Work/>}></Route>
-            <Route path="/contact" element={<Contact/>}></Route>
+            <Route path="/art" element={<Art/>}></Route>
           </Routes>
         </div>
       </div>
