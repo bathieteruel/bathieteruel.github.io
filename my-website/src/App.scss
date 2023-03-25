@@ -1,3 +1,9 @@
+$background-color: azure;
+$base-color: black;
+$text-color: white;
+$highlight-color: tomato;
+$secondary-color: powderblue;
+
 html {
   cursor: none;
 }
@@ -13,38 +19,39 @@ html {
 }
 
 div {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .header {
-  margin: 100px 0 0 0;
+  margin: 20% 0 0 0;
   transition: margin 0.5s;
 
   .name {
     margin: 0 0 0 0;
     line-height: 0.7;
     text-align: left;
-    font-size: 90px;
+    font-size: 6rem;
     font-family:'Caudex';
-    color: black;
+    color: $base-color;
     transition: 0.5s;
     text-decoration: none;
   }
 
   .name:hover {
-    color: tomato;
+    color: $highlight-color;
   }
 
   .header-text{
     margin:  0;
     text-align: left;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Prompt';
-    color: black;
-    transition: 0.5s;
+    color: $base-color;
     line-height: 1.2;
+    transition: 0.5s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
   .NavPhrase {
@@ -52,7 +59,7 @@ div {
   }
 
   nav {
-    margin: 10px 0;
+    margin: 0.7rem 0;
     width: 500;
     text-align: left;
     transition: 0.3s;
@@ -61,19 +68,18 @@ div {
   .navbar-item {
     padding: 5px 20px;
     margin: 0 4px;
-    color: white;
+    color: $text-color;
     font-family: 'Prompt';
     font-size: 40px;
     font-weight: 600;
-    background-color: black;
+    background-color: $base-color;
     transition: 0.3s;
     text-decoration: none;
     border-radius: 3px;
   }
 
   .navbar-item:hover {
-    color: white;
-    background-color: tomato;
+    background-color: $highlight-color;
   }
 
 
@@ -86,8 +92,9 @@ div {
     }
 
     .header-text{
-      font-size: 0px;
+      line-height: 0;
       color: transparent;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
     nav {
@@ -97,6 +104,7 @@ div {
     .navbar-item {
       padding: 3px 10px;
       font-size: 20px;
+      border-radius: 2px;
     }
   }
 }
@@ -106,11 +114,12 @@ div {
   padding: 20px;
   width: 430px;
   text-align: left;
-  background-color: rgb(245, 245, 245,  0.7);
+  background-color: $secondary-color;
   transition: 0.5s;
   font-family: 'Caudex';
   font-size: 30px;
   font-weight: 600;
+  border-radius: 5px;
 }
 
 .page{

@@ -1,5 +1,6 @@
 import './App.scss';
 import { Background } from './Background';
+import { Work } from './Work';
 import {
   BrowserRouter as Router,
   Routes,
@@ -24,16 +25,17 @@ function Header(props) {
 
 
   const classname = `header ${isHeaderSmall ? 'small' : ''}`
+  const headerTextName = `header-text ${isHeaderSmall ? 'hidden' : ''}`
   
   return (
     <div className={classname}>
-      <p className="header-text">Hi, my name is</p>
-      <Link className="name" to="/home">
+      <p className={headerTextName}>Hi, my name is</p>
+      <Link className="name" to="/">
         Bruno Athié Teruel
       </Link>
-      <p className="header-text">I am a computer scientist and anthropologist</p>
+      <p className={headerTextName}>I am a computer scientist and anthropologist</p>
       <div className='NavPhrase'>
-        <p className="header-text">Learn more about: </p>
+        <p className={headerTextName}>Learn more about: </p>
         <nav className="nav" id="nav">
           <Link to="/about" class="navbar-item">me</Link>
           <Link to="/work" class="navbar-item">my work</Link>
@@ -44,24 +46,18 @@ function Header(props) {
   );
 }
 
-function Home() {
+function Footer() {
   return (
-    <div>
-      <Header smallHeader={false}></Header>
+    <div> 
+      <p>bathieteruel</p>
     </div>
   );
 }
 
-function Work() {
+function Home() {
   return (
     <div>
-      <div className="block-page">
-        <ul>
-          <li>Researcher at EduceLab</li>
-          <li>Researcher at HEVA Lab</li>
-          <li>Intern at Carlson</li>
-        </ul>
-      </div>
+      <Header smallHeader={false}></Header>
     </div>
   );
 }
