@@ -6,7 +6,6 @@ import {
   Routes,
   Route,
   Link,
-  useNavigate,
   useLocation,
 } from "react-router-dom";
 import React, { useState, useEffect } from 'react';

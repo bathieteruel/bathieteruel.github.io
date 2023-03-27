@@ -25,10 +25,22 @@ export function Background() {
             ctx.filter = blur;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.beginPath();
-            ctx.arc(mouseX, mouseY, 70, 0, 2 * Math.PI);
-            ctx.fillStyle = '#FF6347';
+            ctx.arc(mouseX, mouseY, 50, 0, 2 * Math.PI);
+            ctx.fillStyle = 'tomato';
             ctx.fill();
 
+            ctx.filter = "none";
+        }
+
+        function drawCircle_2(x, y, color, size) {
+            const blurAmount = 50;
+            const blur = `blur(${blurAmount}px)`;
+
+            ctx.filter = blur;
+            ctx.beginPath();
+            ctx.arc(x, y, size, 0, 2 * Math.PI);
+            ctx.fillStyle = color;
+            ctx.fill();
             ctx.filter = "none";
         }
 

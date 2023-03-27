@@ -1,8 +1,8 @@
-$background-color: azure;
+$background-color: white;
 $base-color: black;
 $text-color: white;
 $highlight-color: tomato;
-$secondary-color: powderblue;
+$secondary-color: whitesmoke;
 
 html {
   cursor: none;
@@ -18,14 +18,10 @@ html {
   }
 }
 
-div {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .header {
   margin: 20% 0 0 0;
   transition: margin 0.5s;
+  position: relative;
 
   .name {
     margin: 0 0 0 0;
@@ -60,7 +56,7 @@ div {
 
   nav {
     margin: 0.7rem 0;
-    width: 500;
+    width: 100%;
     text-align: left;
     transition: 0.3s;
   }
@@ -70,7 +66,7 @@ div {
     margin: 0 4px;
     color: $text-color;
     font-family: 'Prompt';
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     background-color: $base-color;
     transition: 0.3s;
@@ -82,9 +78,12 @@ div {
     background-color: $highlight-color;
   }
 
-
   &.small {
-    margin: 1px 0 0 0;
+    margin: 1% 0 0 0;
+    //padding-top: 1%;
+    //position: fixed;
+    //z-index: 5;
+    //background-color: $background-color;
 
     .name {
       font-size: 40px;

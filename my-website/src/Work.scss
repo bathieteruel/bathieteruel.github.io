@@ -1,15 +1,18 @@
+.experience-quarter {
+    margin: 2% 0 0 0;
+}
+
 .experience-box {
     display: block;
     position: relative;
-    top:-10px;
-    left:0px;
-    margin: 10px 0;
-    padding: 10px 10px;
-    width: 700px;
+    margin: 2% 0 0 0;
+    padding: 2% 2%;
+    width: 100%;
+    max-width: 700px;
     text-align: left;
-    background-color: powderblue;
+    background-color: whitesmoke;
     opacity: 1;
-    border-radius: 5px;
+    border-radius: 1%;
     transition: 0.5s;
     z-index: 2;
     color: black;
@@ -18,13 +21,17 @@
     p {
         font-family: 'Caudex';
         font-size: 20px;
+
+        a {
+            text-decoration: none;
+        }
     }
 
     h1 {
         font-family: 'Prompt';
         font-weight: 700;
         font-size: 30px;
-        line-height: 0.5;
+        line-height: 0.9;
     }
 
     h2 {
@@ -32,25 +39,26 @@
         font-weight: 300;
         font-size: 25px;
         position: relative;
-        line-height: 0.5;
+        line-height: 0.9;
         left:0px;
     }
 }
 
 .img1 {
-    position:fixed;
-    top: 50;
-    left: 820px;
+    top: 900;
     width: 300px;
     z-index: 1;
 }
 
 .img2 {
-    position:fixed;
-    top: 380px;
-    right: 10px;
+    top: 50%;
+    right: 50%;
     width: 300px;
     z-index: 1;
 }
 
+.logo {
+    width: 300px;
+    margin: 10px 0;
+}
 
