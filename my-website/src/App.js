@@ -1,6 +1,7 @@
 import './App.scss';
 import { Background } from './Background';
 import { Work } from './Work';
+import { About } from './About';
 import {
   BrowserRouter as Router,
   Routes,
@@ -28,6 +29,7 @@ function Header(props) {
   
   return (
     <div className={classname}>
+      <div className='header-background'></div>
       <p className={headerTextName}>Hi, my name is</p>
       <Link className="name" to="/">
         Bruno Athié Teruel
@@ -40,36 +42,6 @@ function Header(props) {
           <Link to="/work" class="navbar-item">my work</Link>
           <Link to="/art" class="navbar-item">my art</Link>
         </nav>
-      </div>
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <div> 
-      <p>bathieteruel</p>
-    </div>
-  );
-}
-
-function Home() {
-  return (
-    <div>
-      <Header smallHeader={false}></Header>
-    </div>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <div className="block-page">
-          <p class='Paragraph'> 
-          I was born in Avaré, Brazil. I got a full ride to study
-          at the University of Kentucky. I worked at the intersection
-          of anthropology and computer science.
-          </p>
       </div>
     </div>
   );
@@ -89,8 +61,7 @@ function Art() {
 function App() {
   return (
     <Router>
-      <div className="page" style={{marginLeft: 30, marginRight: 30}}>
-        <Background/>
+      <div className="page" style={{marginLeft: 10, marginRight: 10}}>
         <Header/>
         <div>
           <Routes>

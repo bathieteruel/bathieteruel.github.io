@@ -1,10 +1,11 @@
-import './Work.scss';
+import './Page.scss';
 
 export function Work() {
     return (
         <div>
             <div className='experience-quarter'>
-                <div className='experience-box'>
+                <img src={require("./assets/naples-presentation.png")} alt="" className='img1'/>
+                <div className='box'>
                     <img src={require("./assets/logo-educelab.png")} alt="" className='logo'/>
                     <h1> Undergraduate Researcher </h1>
                     <h2> EduceLab (Digital Restoration Initiative) </h2>
@@ -36,7 +37,7 @@ export function Work() {
                 </div>
             </div>
             <div className='experience-quarter'>
-                <div className='experience-box'>
+                <div className='box'>
                 <img src={require("./assets/logo-heva.png")} alt="" className='logo'/>
                     <h1> Undergraduate Researcher </h1>
                     <h2> HEVA Lab (Human Evolution and Virtual Archaeology Lab) </h2>

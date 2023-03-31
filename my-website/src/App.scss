@@ -4,13 +4,12 @@ $text-color: white;
 $highlight-color: tomato;
 $secondary-color: whitesmoke;
 
-html {
-  cursor: none;
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.App {
-  text-align: center;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -19,9 +18,21 @@ html {
 }
 
 .header {
-  margin: 20% 0 0 0;
+  margin: 15% 0 0 0;
   transition: margin 0.5s;
-  position: relative;
+  position: sticky;
+  top: 10px;
+
+  .header-background {
+    top: -130px;
+    left: -30px;
+    width: 100rem;
+    height: 120px;
+    z-index: -1;
+    position: fixed;
+    transition: 0.5s;
+    background-color: azure;
+  }
 
   .name {
     margin: 0 0 0 0;
@@ -79,11 +90,21 @@ html {
   }
 
   &.small {
-    margin: 1% 0 0 0;
+    margin: 2% 0 0 0;
     //padding-top: 1%;
     //position: fixed;
-    //z-index: 5;
+    z-index: 100;
     //background-color: $background-color;
+
+    .header-background {
+      top: -100px;
+      left: -30px;
+      width: 100rem;
+      height: 200px;
+      z-index: -1;
+      position: absolute;
+      background-color: whitesmoke;
+    }
 
     .name {
       font-size: 40px;
@@ -119,10 +140,6 @@ html {
   font-size: 30px;
   font-weight: 600;
   border-radius: 5px;
-}
-
-.page{
-  display: inline-block;
 }
 
 .Paragraph {
