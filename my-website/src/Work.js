@@ -4,7 +4,6 @@ export function Work() {
     return (
         <div>
             <div className='experience-quarter'>
-                <img src={require("./assets/naples-presentation.png")} alt="" className='img1'/>
                 <div className='box'>
                     <img src={require("./assets/logo-educelab.png")} alt="" className='logo'/>
                     <h1> Undergraduate Researcher </h1>
