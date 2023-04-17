@@ -1,5 +1,7 @@
+@import "App";
+
 .background {
-    background-color: white;
+    background-color: $background-color;
     position: fixed;
     top: 0;
     left: 0;

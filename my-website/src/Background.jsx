@@ -1,4 +1,4 @@
-import './Background.css';
+import './Background.scss';
 import { useReducer, useTick, useRef, useEffect } from 'react';
 import { KawaseBlurFilter } from "https://cdn.skypack.dev/@pixi/filter-kawase-blur@3.2.0";
 import SimplexNoise from "https://cdn.skypack.dev/simplex-noise@3.0.0";
@@ -80,21 +80,22 @@ export function Background() {
 
         function drawCircle() {
             const blurAmount = 40;
-            const blur = `blur(${blurAmount}px)`;
+            //const blur = `blur(${blurAmount}px)`;
 
             var size = (mouseX/canvas.width)*500;
             
-            ctx.filter = blur;
+            //ctx.filter = blur;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.beginPath();
             ctx.arc(mouseX, mouseY, 60, 0, 2 * Math.PI);
 
             var g = (mouseX/canvas.width)*220;
             var b = (mouseY/canvas.height)*220;
-            ctx.fillStyle = `rgb(240, ${g}, ${b})`;
+            //ctx.fillStyle = `rgb(240, ${g}, ${b})`;
+            ctx.fillStyle = '#eeff41';
             ctx.fill();
 
-            ctx.filter = "none";
+            //ctx.filter = "none";
         }
 
         function drawCircle_2(x, y, color, size) {
@@ -118,7 +119,7 @@ export function Background() {
 
         function animate() {
             requestAnimationFrame(animate);
-            drawCircle();
+           // drawCircle();
         }
 
         animate();

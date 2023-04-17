@@ -24,24 +24,26 @@ function Header(props) {
   }, [location.pathname]);
 
 
-  const classname = `header ${isHeaderSmall ? 'small' : ''}`
+  const classname = `header2 ${isHeaderSmall ? 'small' : ''}`
   const headerTextName = `header-text ${isHeaderSmall ? 'hidden' : ''}`
   
   return (
     <div className={classname}>
       <div className='header-background'></div>
-      <p className={headerTextName}>Hi, my name is</p>
-      <Link className="name" to="/">
-        Bruno Athié Teruel
-      </Link>
-      <p className={headerTextName}>I am a computer scientist and anthropologist</p>
       <div className='NavPhrase'>
-        <p className={headerTextName}>Learn more about: </p>
         <nav className="nav" id="nav">
-          <Link to="/about" class="navbar-item">me</Link>
-          <Link to="/work" class="navbar-item">my work</Link>
-          <Link to="/art" class="navbar-item">my art</Link>
+          <Link to="/about" class="navbar-item">about</Link>
+          <Link to="/work" class="navbar-item">experience</Link>
+          <Link to="/art" class="navbar-item">art</Link>
         </nav>
+      </div>
+      <div className='name-block'>
+        <Link className="name" to="/">
+          Bruno<br/>
+          Athié<br/>
+          Teruel<br/>
+        </Link>
+        <p className={headerTextName}>computer<br/>scientist<br/>&<br/>anthropologist</p>
       </div>
     </div>
   );
@@ -61,6 +63,7 @@ function Art() {
 function App() {
   return (
     <Router>
+      <Background/>
       <div className="page" style={{marginLeft: 10, marginRight: 10}}>
         <Header/>
         <div>

@@ -1,30 +1,87 @@
+@import "App";
+
+$max-width: 95%;
+$max-width-paragraph: 700px;
+
 .experience-quarter {
     margin: auto;
+}
+
+.nav-secondary {
+    display: flex;
+    position: sticky;
+    top: 15%;
+    margin: 2.5%;
+    width: 100%;
+    text-align: left;
+    transition: 0.5s;
+
+  .navbar-item {
+    padding: 0.5rem 0.5rem;
+    margin: 0 -0.5px;
+
+    color: $text-color;
+    font-family: 'Lexend';
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    background-color: $highlight-color, transparent;
+
+    border-color: $text-color;
+    border-right: solid;
+    border-left: solid;
+    border-width: 1.3px;
+
+    transition: 0.5s;
+    text-decoration: none;
+  }
+
+  .navbar-item:hover {
+    //background-color: $highlight-color;
+    animation: 0.3s multicolor;
+    background-color: $text-color;
+    color: $background-color;
+  }
+}
+
+.title {
+    margin: auto;
+    width: 100%;
+    max-width: $max-width;
+    padding: 2%;
+    font-family: 'Lexend';
+    text-align: right;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1;
+    border-bottom: solid;
+    border-width: 1.3px;
+    border-color: $text-color;
 }
 
 .box {
     display: block;
     position: relative;
-    margin: 2% auto;
-    padding: 2% 2%;
+    margin: 0.5% auto;
+    padding: 1%;
     width: 100%;
-    max-width: 700px;
-    text-align: left;
+    max-width: $max-width;
+    text-align: justify;
     background-color: transparent;
     opacity: 1;
     transition: 0.5s;
     z-index: 2;
-    color: black;
+    color: $text-color;
     cursor: auto;
     
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 0px;
+    border-bottom: solid;
+    border-width: 1.3px;
     border-color: black;
 
     p {
-        font-family: 'Caudex';
+        font-family: 'Lexend';
         font-size: 20px;
+        max-width: $max-width-paragraph;
 
         a {
             text-decoration: none;
@@ -32,14 +89,14 @@
     }
 
     h1 {
-        font-family: 'Prompt';
+        font-family: 'Lexend';
         font-weight: 700;
         font-size: 30px;
         line-height: 0.9;
     }
 
     h2 {
-        font-family: 'Prompt';
+        font-family: 'Lexend';
         font-weight: 300;
         font-size: 25px;
         position: relative;
@@ -47,6 +104,72 @@
         left:0px;
     }
 }
+
+
+.presentation-box {
+    display: block;
+    position: relative;
+    margin: 0.5% auto;
+    padding: 1%;
+    width: 100%;
+    max-width: $max-width;
+    text-align: left;
+    background-color: transparent;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 2;
+    color: $text-color;
+    cursor: auto; 
+    border-bottom: solid;
+    border-width: 1.3px;
+    border-color: black;
+    transition: 0.3s;
+
+    h1 {
+        font-family: 'Lexend';
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 0.9;
+    }
+
+    h2 {
+        font-family: 'Lexend';
+        font-weight: 300;
+        font-size: 0px;
+        position: relative;
+        line-height: 0;
+        left:0px;
+        transition: 0.3s;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    p {
+        font-family: 'Lexend';
+        font-size: 0px;
+        line-height: 0;
+        transition: 0.3s;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+        a {
+            text-decoration: none;
+        }
+    } 
+}
+
+.presentation-box:hover {
+    h2 {
+        line-height: 0.9;
+        font-size: 25px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    p {
+        line-height: 0.9;
+        font-size: 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}  
+
 
 .img1 {
     top: 20%;
