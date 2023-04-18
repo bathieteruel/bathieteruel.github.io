@@ -4,6 +4,11 @@ $max-width: 95%;
 $max-width-paragraph: 700px;
 $max-width-h1: 80%;
 
+$title-size: 60px;
+$h1-size: 25px;
+$h2-size: 20px;
+$p-size: 15px;
+
 .experience-quarter {
     margin: auto;
 }
@@ -54,7 +59,7 @@ $max-width-h1: 80%;
     font-family: 'Lexend';
     text-align: right;
     font-weight: 700;
-    font-size: 70px;
+    font-size: $title-size;
     line-height: 1;
     border-bottom: solid;
     border-width: 1.3px;
@@ -64,7 +69,7 @@ $max-width-h1: 80%;
 .date {
     font-family: 'Lexend';
     font-weight: 700;
-    font-size: 30px;
+    font-size: $h1-size;
     line-height: 0.9;
     right: 2%;
     top: 5%;
@@ -95,7 +100,7 @@ $max-width-h1: 80%;
 
     p {
         font-family: 'Lexend';
-        font-size: 20px;
+        font-size: $p-size;
         max-width: $max-width-paragraph;
 
         a {
@@ -107,14 +112,14 @@ $max-width-h1: 80%;
         max-width: $max-width-h1;
         font-family: 'Lexend';
         font-weight: 700;
-        font-size: 30px;
+        font-size: $h1-size;
         line-height: 0.9;
     }
 
     h2 {
         font-family: 'Lexend';
         font-weight: 300;
-        font-size: 25px;
+        font-size: $h2-size;
         position: relative;
         line-height: 0.9;
         left:0px;
@@ -145,7 +150,7 @@ $max-width-h1: 80%;
         max-width: $max-width-h1;
         font-family: 'Lexend';
         font-weight: 700;
-        font-size: 30px;
+        font-size: $h1-size;
         line-height: 0.9;
     }
 
@@ -176,13 +181,13 @@ $max-width-h1: 80%;
 .presentation-box:hover {
     h2 {
         line-height: 0.9;
-        font-size: 25px;
+        font-size: $h2-size;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     p {
         line-height: 0.9;
-        font-size: 20px;
+        font-size: $p-size;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }  
@@ -211,8 +216,8 @@ $max-width-h1: 80%;
 
 .self-img {
     top: 5%;
-    right: 10%;
-    width: 20%;
+    right: 0%;
+    height: 86%;
     position: absolute;
     z-index: 1;
 }
