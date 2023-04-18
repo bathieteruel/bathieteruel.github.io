@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee4111ff.css",
-    "main.js": "/static/js/main.2b53d4ee.js",
+    "main.css": "/static/css/main.86cb4277.css",
+    "main.js": "/static/js/main.f80df5f4.js",
     "static/js/787.bbe01249.chunk.js": "/static/js/787.bbe01249.chunk.js",
     "static/media/board-of-trustees-pres.png": "/static/media/board-of-trustees-pres.fa43ebab7a756dbf30d3.png",
     "static/media/bruno-archaeology.jpg": "/static/media/bruno-archaeology.6fcf86e472b9bf1e6915.jpg",
     "static/media/naples-biblioteca.png": "/static/media/naples-biblioteca.8cc1fc71a0beaa7fdde8.png",
     "index.html": "/index.html",
-    "main.ee4111ff.css.map": "/static/css/main.ee4111ff.css.map",
-    "main.2b53d4ee.js.map": "/static/js/main.2b53d4ee.js.map",
+    "main.86cb4277.css.map": "/static/css/main.86cb4277.css.map",
+    "main.f80df5f4.js.map": "/static/js/main.f80df5f4.js.map",
     "787.bbe01249.chunk.js.map": "/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee4111ff.css",
-    "static/js/main.2b53d4ee.js"
+    "static/css/main.86cb4277.css",
+    "static/js/main.f80df5f4.js"
   ]
 }
