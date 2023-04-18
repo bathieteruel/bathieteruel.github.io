@@ -216,11 +216,8 @@ export function Work() {
                     <h2> Lewis Honors College </h2>
                     <h2> University of Kentucky, USA </h2>
                     <p>
-                        Developed, reviewed and debugged original code.
-                        Deployed new central features and communicated directly with clients during troubleshooting meetings.
-                        Investigated and successfully fixed time-sensitive software bugs.
-                        Worked with 3D surfacing algorithms and point cloud management libraries.
-                        Developed front-end and back-end.
+                        Engaged new students at the Honors College through mentorship and leadership.
+                        Organized events to build community among Honors College students
                     </p>
                 </div>
             </div>
