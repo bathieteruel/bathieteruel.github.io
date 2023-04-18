@@ -22,11 +22,13 @@ html, body {
   transition: 0.5s;
   z-index: 100;
   top: 6%;
-  position: sticky;
+  position: relative;
   display: flex;
 
   .header-background {
     top: -130px;
+    left: -5.263%;
+    width: 110%;
     height: 120px;
     z-index: -1;
     position: fixed;
@@ -74,7 +76,8 @@ html, body {
     margin: auto;
     width: 100%;
     text-align: left;
-    transition: 0.5s;
+    transition-delay: 0.3s;
+    transition-property: position;
   }
 
   .navbar-item {
@@ -86,7 +89,7 @@ html, body {
     font-size: 1.5rem;
     font-weight: 300;
 
-    background-color: $highlight-color, transparent;
+    background-color: $background-color;
 
     border-color: $text-color;
     border-right: solid;
@@ -107,17 +110,12 @@ html, body {
   &.small {
     width: 95%;
     pointer-events: none;
-    position: relative;
+    //position: relative;
 
     .header-background {
-      top: -100px;
-      left: -5.263%;
-      width: 110%;
-      height: 400px;
-      z-index: -1;
-      position: absolute;
-      background-color: transparent;
-      background-image: linear-gradient(to bottom, $background-color,  $background-color, transparent);
+      //height: 240px;
+      background-color: $background-color;
+      //background-image: linear-gradient(to bottom, $background-color,  $background-color, transparent);
     }
 
     .header-text{
@@ -133,6 +131,10 @@ html, body {
       width: 10rem;
     }
   
+    nav {
+      //position: fixed;
+    }
+
     .navbar-item {
       pointer-events: auto;
       padding: 0.5rem 2rem;
@@ -170,6 +172,23 @@ html, body {
   }
   100% {
     background-color: $text-color;
+  }
+}
+
+.footer {
+  p {
+    text-align: center;
+    font-family: 'Lexend';
+    font-size: 0%;
+    color: transparent;
+    //transition-delay: 0.5s;
+  }
+
+  &.small {
+    p {
+      color: $base-color;
+      font-size: 100%;
+    }
   }
 }
 

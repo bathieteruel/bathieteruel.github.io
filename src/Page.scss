@@ -4,10 +4,10 @@ $max-width: 95%;
 $max-width-paragraph: 700px;
 $max-width-h1: 80%;
 
-$title-size: 55px;
+$title-size: 65px;
 $h1-size: 27px;
-$h2-size: 25px;
-$p-size: 20px;
+$h2-size: 1.5rem;
+$p-size: 1.3rem;
 
 .experience-quarter {
     margin: auto;
@@ -217,7 +217,7 @@ $p-size: 20px;
 .self-img {
     top: 5%;
     right: 0%;
-    height: 86%;
+    height: 60%;
     position: absolute;
     z-index: 1;
 }

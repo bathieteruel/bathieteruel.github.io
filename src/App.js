@@ -49,6 +49,28 @@ function Header(props) {
   );
 }
 
+function Footer() {
+  const location = useLocation();
+  const [isHeaderSmall, setIsHeaderSmall] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === '/about' || location.pathname === '/work' || location.pathname === '/art') {
+      setIsHeaderSmall(true);
+    } else {
+      setIsHeaderSmall(false); 
+    }
+  }, [location.pathname]);
+
+
+  const classname = `footer ${isHeaderSmall ? 'small' : ''}`
+
+  return (
+    <div className={classname}>
+      <p>website by <i>Bruno Athie Teruel</i> (me)</p>
+    </div>
+  );
+}
+
 function Art() {
   return (
     <div>
@@ -73,6 +95,7 @@ function App() {
             <Route path="/art" element={<Art/>}></Route>
           </Routes>
         </div>
+        <Footer/>
       </div>
     </Router>
   );

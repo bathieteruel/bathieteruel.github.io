@@ -101,7 +101,7 @@ export function Work() {
             </div>
             <div className='presentation-box'>
                 <h1 className='date'>2020</h1>
-                <h1> 1st Place at Writing Rethoric and Digital Studies Awards 2022 </h1>
+                <h1> 1st Place at Writing Rethoric and Digital Studies Awards 2020 </h1>
                 <h2> My team's work was chosen to be awardes and published </h2>
             </div>
             <div className='presentation-box'>
