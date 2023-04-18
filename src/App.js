@@ -40,7 +40,7 @@ function Header(props) {
       <div className='name-block'>
         <Link className="name" to="/">
           Bruno<br/>
-          Athié test<br/>
+          Athié <br/>
           Teruel<br/>
         </Link>
         <p className={headerTextName}>computer<br/>scientist<br/>&<br/>anthropologist</p>
