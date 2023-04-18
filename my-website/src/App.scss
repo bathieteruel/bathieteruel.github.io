@@ -1,6 +1,6 @@
 $background-color: #eceae4ff;
-$base-color: black;
-$text-color: black;
+$base-color: rgb(36, 35, 34);
+$text-color: rgb(36, 35, 34);
 $highlight-color: #ff3500;
 $secondary-color: #eceae4ff;
 
@@ -107,6 +107,7 @@ html, body {
   &.small {
     width: 95%;
     pointer-events: none;
+    position: relative;
 
     .header-background {
       top: -100px;
@@ -131,11 +132,10 @@ html, body {
       font-size: 4rem;
       width: 10rem;
     }
-
-
+  
     .navbar-item {
       pointer-events: auto;
-      padding: 0.5rem 0.5rem;
+      padding: 0.5rem 2rem;
     }
   }
 }
@@ -166,6 +166,39 @@ html, body {
   }
   90% {
     background-color: rgb(70, 24, 7);
+    opacity: 90%;
+  }
+  100% {
+    background-color: $text-color;
+  }
+}
+
+@keyframes multicolor-darkmode {
+  0% {
+    background-color: $background-color;
+  }
+  15% {
+    background-color: rgb(60, 53, 50);
+    opacity: 15%;
+  }
+  30% {
+    background-color:rgb(88, 59, 55);
+    opacity: 30%;
+  }
+  45% {
+    background-color:  rgb(144, 72, 63);
+    opacity: 45%;
+  }
+  60% {
+    background-color:  rgb(204, 79, 63);
+    opacity: 60%;
+  }
+  85% {
+    background-color:  rgb(240, 127, 112);
+    opacity: 85%;
+  }
+  90% {
+    background-color: rgb(226, 182, 176);
     opacity: 90%;
   }
   100% {

@@ -53,7 +53,7 @@ function Art() {
   return (
     <div>
       <div className="block-page">
-        <p>art here</p>
+        <p>art will go here (page under construction)</p>
       </div>
     </div>
   );
