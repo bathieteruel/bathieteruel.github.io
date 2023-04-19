@@ -157,7 +157,7 @@ $p-size: 1.3rem;
     h2 {
         font-family: 'Lexend';
         font-weight: 300;
-        font-size: 0px;
+        //font-size: 0px;
         position: relative;
         line-height: 0;
         left:0px;
@@ -167,7 +167,7 @@ $p-size: 1.3rem;
 
     p {
         font-family: 'Lexend';
-        font-size: 0px;
+        //font-size: 0px;
         line-height: 0;
         transition: 0.3s;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -180,7 +180,7 @@ $p-size: 1.3rem;
 
 .presentation-box:hover {
     h2 {
-        line-height: 0.9;
+        line-height: 1.5;
         font-size: $h2-size;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }

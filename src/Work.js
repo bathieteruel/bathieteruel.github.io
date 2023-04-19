@@ -12,8 +12,8 @@ export function Work() {
                 {/*<img src={require("./assets/logo-heva.png")} alt="" className='logo'/>*/}
                     <h1 className='date'>05.2023</h1>
                     <h1> BS, Computer Science </h1>
-                    <h2> University of Kentucky </h2>
                     <h2> Minor in Mathematics </h2>
+                    <h2> University of Kentucky </h2>
                     <p>
                         GPA: 4.0/4.0
                         Summa Cum Laude
@@ -44,46 +44,52 @@ export function Work() {
             <div className='presentation-box'>
                 <h1 className='date'>06.2022</h1>
                 <h1> University of Naples Federico II </h1>
-                <h2> "Virtual Restoration of Herculaneum Scrolls" </h2>
-                <h2> Naples, Italy </h2>
-                <h2> Guest Speaker </h2>
+                <h2> "Virtual Restoration of Herculaneum Scrolls" <br/>
+                     Naples, Italy <br/>
+                     Guest Speaker 
+                </h2>
             </div>
             <div className='presentation-box'>
                 <h1 className='date'>10.2022</h1>
                 <h1> Kentucky Academy of Science </h1>
-                <h2> "Development of an Image Registration and Blending Process to Produce Cohesive Images of a Herculaneum Scroll" </h2>
-                <h2> Morehead, Kencucky </h2>
-                <h2> Presenter </h2>
+                <h2> "Development of an Image Registration and Blending Process to Produce Cohesive Images of a Herculaneum Scroll" <br/>
+                     Morehead, Kencucky <br/>
+                     Presenter 
+                </h2>
             </div>
             <div className='presentation-box'>
                 <h1 className='date'>04.2023</h1>
                 <h1> National Conference of Undergraduate Research </h1>
-                <h2> "Virtual Restoration of 2000-year-old Herculaneum Scrolls" </h2>
-                <h2> Eau Claire, Wisconsin </h2>
-                <h2> Presenter </h2>
+                <h2> "Virtual Restoration of 2000-year-old Herculaneum Scrolls" <br/>
+                     Eau Claire, Wisconsin <br/>
+                     Presenter 
+                </h2>
             </div>
             <div className='presentation-box'>
                 <h1 className='date'>04.2023</h1>
                 <h1> American Association of Biological Anthropology </h1>
-                <h2> "Quantifying Biological Sex of Lagoa Santa" </h2>
-                <h2> Reno, Nevada </h2>
-                <h2> Presenter </h2>
+                <h2> "Quantifying Biological Sex of Lagoa Santa" <br/>
+                     Reno, Nevada <br/>
+                     Presenter 
+                </h2>
             </div>
             <div className='presentation-box'>
                 <h1 className='date'>03.2023</h1>
                 <h1> Society of American Archaeology </h1>
-                <h2> "Limp but not Leaky: Clarifying Pipeline Problems for Women in Academic Archaeology" </h2>
-                <h2> Portland, Oregon </h2>
-                <h2> Co-author (not presenter) </h2>
+                <h2> "Limp but not Leaky: Clarifying Pipeline Problems for Women in Academic Archaeology" <br/>
+                     Portland, Oregon <br/>
+                     Co-author (not presenter) 
+                </h2>
             </div>
             <div className='presentation-box'>
                 <h1 className='date'>04.2022 & 04.2023</h1>
                 <h1> Undergraduate Research Showcase 22-23 </h1>
-                <h2> "Image Registration and Blending Pipeline for Herculaneum Scrolls" </h2>
-                <h2> "Enhanced Tool for Image Segmentation of Herculaneum Scrolls" </h2>
-                <h2> "Quantifying Biological Sex in Ancient Brazil" </h2>
-                <h2> Lexington, Kencucky </h2>
-                <h2> Presenter </h2>
+                <h2> "Image Registration and Blending Pipeline for Herculaneum Scrolls" <br/>
+                     "Enhanced Tool for Image Segmentation of Herculaneum Scrolls" <br/>
+                     "Quantifying Biological Sex in Ancient Brazil" <br/>
+                     Lexington, Kencucky <br/>
+                     Presenter 
+                </h2>
             </div>
             <p className='title'>
                 awards & honors
@@ -91,8 +97,8 @@ export function Work() {
             <div className='presentation-box'>
                 <h1 className='date'>2019-23</h1>
                 <h1> Presidential Scholarship </h1>
-                <h2> Full Out-of-State Tuition to study at the University of Kentucky </h2>
-                <h2> Only international student to receive the award in my year </h2>
+                <h2> Full Out-of-State Tuition to study at the University of Kentucky <br/>
+                     Only international student to receive the award in my year </h2>
             </div>
             <div className='presentation-box'>
                 <h1 className='date'>2019-23</h1>
