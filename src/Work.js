@@ -146,7 +146,7 @@ export function Work() {
                     <h2> University of Kentucky - USA </h2>
                     <p>
                     <a href="https://www2.cs.uky.edu/dri/">EduceLab</a> is a state-of-the-art heritage science Lab
-                        at the university of Kentucky. For two years, I worked
+                        at the University of Kentucky. For two years, I worked
                         under Dr. Brent Seales' guidance to develop software to
                         study damaged ancient scrolls through technology, sometimes
                         revealing text that was previously invisible to the naked

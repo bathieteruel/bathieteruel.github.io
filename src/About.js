@@ -11,12 +11,12 @@ export function About() {
         excellence in both. During my time in the USA, I worked in the
         interesection between computer science and the humanities, and 
         found a new passion in the interdisciplinary gray areas that 
-        separate disciplines. I am also passionate about the arts and
-        design.
+        separate these disciplines. I am also passionate about the arts
+        and design.
       </p>
       <p>
         I worked as an intern in both research and industry, with a focus 
-        on computer vision and 3D computer graphics. For two years I worked 
+        on computer vision and computer graphics. For two years I worked 
         at EduceLab, where we employed CT scanning, computer vision, and 
         machine learning to virtually unwrap damaged historical documents.
         I was also a researcher at the Human Evolution and Virtual Archaeology
