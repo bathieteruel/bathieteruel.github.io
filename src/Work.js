@@ -67,8 +67,8 @@ export function Work() {
             </div>
             <div className='presentation-box'>
                 <h1 className='date'>04.2023</h1>
-                <h1> American Association of Biological Anthropology </h1>
-                <h2> "Quantifying Biological Sex of Lagoa Santa" <br/>
+                <h1> American Association of Biological Anthropologists </h1>
+                <h2> "Quantifying sexual dimorphism of the bony labyrinth and biological sex distribution in Lagoa Santa, Brazil. " <br/>
                      Reno, Nevada <br/>
                      Presenter 
                 </h2>
@@ -76,7 +76,7 @@ export function Work() {
             <div className='presentation-box'>
                 <h1 className='date'>03.2023</h1>
                 <h1> Society of American Archaeology </h1>
-                <h2> "Limp but not Leaky: Clarifying Pipeline Problems for Women in Academic Archaeology" <br/>
+                <h2> "The Impact of Gendered Mentorship in the Leak between Dissertation Programs and Tenure-Track Jobs" <br/>
                      Portland, Oregon <br/>
                      Co-author (not presenter) 
                 </h2>
