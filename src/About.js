@@ -8,7 +8,10 @@ export function About() {
         I was born in Avaré, Brazil. In 2019, I got a full ride to study
         at the University of Kentucky, where I completed a dual degree in
         Computer Science and Anthropology, and won awards for academic
-        excellence in both. During my time in the USA, I worked in the
+        excellence in both. I graduated Summa Cum Laude and received the 
+        Diachun Scholar Award, which is given to the student majoring in sciences 
+        with the highest academic achievement among the graduating class.
+        During my time in the USA, I worked in the
         interesection between computer science and the humanities, and 
         found a new passion in the interdisciplinary gray areas that 
         separate these disciplines. I am also passionate about the arts

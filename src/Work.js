@@ -108,7 +108,7 @@ export function Work() {
             <div className='presentation-box'>
                 <h1 className='date'>2020</h1>
                 <h1> 1st Place at Writing Rethoric and Digital Studies Awards 2020 </h1>
-                <h2> My team's work was chosen to be awardes and published </h2>
+                <h2> My team's work was chosen to be awarded and published </h2>
             </div>
             <div className='presentation-box'>
                 <h1 className='date'>2022</h1>
@@ -131,7 +131,14 @@ export function Work() {
             </div>
             <div className='presentation-box'>
                 <h1 className='date'>2023</h1>
-                <h1> Department of Anthropology Undegraduate Research Award </h1>
+                <h1> Distinguished Undergraduate Award for Research in Anthropology</h1>
+            </div>
+            <div className='presentation-box'>
+                <h1 className='date'>2023</h1>
+                <h1> Diachun Scholar Award </h1>
+                <h2> "Bestowed on the graduating 
+                    senior, majoring in science or a related field, who has the highest academic 
+                    achievement in their graduating class." </h2>
             </div>
             <p className='title'>
                 research
@@ -165,8 +172,10 @@ export function Work() {
                         Conference of Undergraduate Research (NCUR) in Wisconsin.
                     </p>
                     <p>
-                        My work in EduceLab includes the <a href="https://gitlab.com/educelab/quick-segment">Quick Segment</a> app to quickly
-                        create segmentations of pages in damaged scrolls.
+                        My work in EduceLab includes the open source <a href="https://gitlab.com/educelab/quick-segment">Quick Segment</a> app to quickly
+                        create segmentations of pages in damaged scrolls. I created this app with my colleague Sydney Chapman, building on
+                        top of the work of others in our lab including Seth Parker, Stephen Parsons and Dr. Brent Seales. Now the app is actively
+                        used in research and continuously improved by others. 
                     </p>
                 </div>
             </div>
