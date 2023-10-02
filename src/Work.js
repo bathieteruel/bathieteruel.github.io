@@ -204,6 +204,23 @@ export function Work() {
                     </p>
                 </div>
             </div>
+            <div className='experience-quarter'>
+                <div className='box'>
+                {/*<img src={require("./assets/logo-heva.png")} alt="" className='logo'/>*/}
+                    <h1 className='date'>2023</h1>
+                    <h1> Co-Investigator </h1>
+                    <h2> Panhutongan Archaeological Field School </h2>
+                    <h2> University of Kentucky - USA & St. Paul University Surigao - Philippines </h2>
+                    <p>
+                        I spent part of the summer 2023 in the Surigao Del Norte Province, 
+                        Philippines, as a part of an archaeological field school at the Panhutongan Elementary
+                        School Archaeological site. I was under the mentorship of Dr. Hugo Reyes-Centeno and
+                        PhD Candidate James Keppeler. During this time
+                        I engaged in multiple aspects of archaeological research, from excavation, to
+                        presentation, community engagement, and shadowing permit requests. 
+                    </p>
+                </div>
+            </div>
             <p className='title'>
                 work
             </p>
